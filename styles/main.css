@@ -1,0 +1,95 @@
+:root {
+    --strong_black: #000;
+    --basic_white: #fff;
+    --sapphire_blue: #1D4E84;
+    --light_gray: #D5D5D4;
+    --light_blue: #8DACC9;
+    --young_orange: #E2823B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-1 {
+    /* background-color: var(--sapphire_blue); */
+    background: url('../images/backgrounds/luca-bravo-i_0do3VRdxs-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--light_gray);
+    padding: 0!important;
+}
+
+.section-1 .transparent{
+    background-color: #1d4f847a;
+    padding: 100px 0 40px;
+}
+
+.section-2 {
+    background-color: var(--sapphire_blue);
+    color: var(--light_gray);
+}
+
+.section-3 {
+    background-color: var(--light_blue);
+    color: var(--basic_white);
+}
+
+.section-4 {
+    background-color: var(--young_orange);
+    color: var(--basic_white);
+}
+
+.section-5 {
+    background-color: var(--light_gray);
+    color: var(--sapphire_blue);
+}
+
+.section-6 {
+    /* background-color: var(--light_blue); */
+    /* color: var(--strong_black); */
+    background: url('../images/LEXX_visual29.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--light_gray);
+    height: 1000px;
+}
+
+.section-7 {
+    background-color: var(--young_orange);
+    color: var(--strong_black);
+}
+
+.section-8 {
+    background-color: var(--basic_white);
+    color: var(--strong_black);
+}
+
+.section-9 {
+    background-color: var(--light_gray);
+    color: var(--sapphire_blue);
+}
+
+.box-3 {
+    padding-left: 10px;
+    border-left: 3px solid #FFF;
+}
+
+.box-3 p {
+    margin: 0!important;
+}
+
+.box-4 {
+    border-bottom: 2px solid #FFF;
+    padding: 10px 0;
+    height: 100%;
+}
