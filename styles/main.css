@@ -101,6 +101,12 @@ h2 {
     margin-bottom: 10px;
 }
 
+.section-3 img {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+
 .section-4 {
     background-color: var(--young_orange);
     color: var(--basic_white);
@@ -109,8 +115,12 @@ h2 {
 .section-4 h3 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
+}
+
+.section-4 .box-4 p {
+    padding: 0 40px;
 }
 
 .section-5 {
@@ -128,41 +138,46 @@ h2 {
     color: var(--young_orange);
 }
 
-.section-6 h2 {
-color: var(--basic_white);
-text-align: center;
-margin-bottom: 2rem;
+.section-6 h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--basic_white);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-6 h3 span.custom_span {
+    color: var(--young_orange);
 }
 
 .section-6 p {
-font-size: 1.2rem;
-margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .section-6 .benefit {
-margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.section-6 .benefit h4 {
-font-size: 1.5rem;
-font-weight: bold;
-margin-bottom: 0.5rem;
-color: var(--basic_white);
+.section-6 .box-6 {
+    padding: 20px;
+    background-color: #d5d5d49a;
+    color: var(--sapphire_blue);
+    height: 370px;
 }
 
-.section-6 .benefit p {
-margin-left: 1rem;
+.section-6 .box-6 h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--sapphire_blue);
+    margin-bottom: 1rem;
 }
 
-.section-6 .icon {
-margin-right: 1rem;
-color: var(--basic_white);
-}
-
-@media (min-width: 768px) {
-.section-6 .benefit p {
-    margin-left: 2rem;
-}
+.section-6 .box-6 p{
+    font-size: 14px;
 }
 
 .section-6 {
@@ -171,14 +186,7 @@ color: var(--basic_white);
     background: url('../images/LEXX_visual29-muted.jpg') no-repeat center center;
     background-size: cover;
     color: var(--basic_white);
-    height: 1000px;
-}
-
-.section-6 h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-
+    /* height: 1000px; */
 }
 
 .section-7 {
@@ -229,8 +237,20 @@ color: var(--basic_white);
     margin: 0!important;
 }
 
-.box-4 {
-    border-bottom: 2px solid #FFF;
-    padding: 10px 0;
-    height: 100%;
+
+
+@media screen and (max-width: 500px) {
+    .section-1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-3 .col-12 {
+        flex-direction: column;
+        align-items: start!important;
+    }
+
+    .section-3 img {
+        width: 60px;
+        height: 60px;
+    }
 }
