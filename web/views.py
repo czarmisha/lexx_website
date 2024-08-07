@@ -1,5 +1,6 @@
 import requests
 
+from django.conf import settings
 from django.shortcuts import render
 from django.views.generic import TemplateView, DetailView, View
 
@@ -43,8 +44,8 @@ class ApplicationCreateView(View):
             return self.form_invalid(form)
 
     def send_telegram_message(self, application):
-        telegram_token = 'your_telegram_bot_token'
-        telegram_chat_id = 'your_telegram_chat_id'
+        telegram_token = settings.TELEGRAM_BOT_TOKEN
+        telegram_chat_id = settings.TELEGRAM_CHAT_ID
         message = f"New Application:\nName: {application.name}\nPhone: {application.phone}"
         url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
         data = {
@@ -52,4 +53,4 @@ class ApplicationCreateView(View):
             'text': message
         }
         response = requests.post(url, data=data)
-        response.raise_for_status()  # Raises an exception if the request was unsuccessful
+        response.raise_for_status()
