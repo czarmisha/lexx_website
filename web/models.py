@@ -12,8 +12,8 @@ class AbstractModel(models.Model):
 class Image(AbstractModel):
     image = models.ImageField(upload_to="images/")
 
-    def __str__(self):
-        return self.title
+    def __str__(self) -> str:
+        return f"Image {str(self.pk)} - {self.image}"
 
 
 class Post(AbstractModel):
@@ -27,8 +27,8 @@ class Post(AbstractModel):
 
 
 class Application(AbstractModel):
-    fio = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.phone
+        return f"{self.pk}: {self.name} {self.phone}"

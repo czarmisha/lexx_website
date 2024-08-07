@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 ADMIN_BASE_URL = "63ae033a-1e33-4b7a-b6c1-f354087c41e5/"
 INTERNAL_IPS = [
     "127.0.0.1",
