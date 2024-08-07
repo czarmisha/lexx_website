@@ -37,9 +37,17 @@ class ApplicationCreateView(View):
 
             try:
                 self.send_telegram_message(application)
-                return render(request, 'web/application_status.html', {'status': 'Успешно отправлено'})
+                return render(
+                    request,
+                    'web/application_status.html',
+                    {'success': True, 'status': 'Успешно отправлено'}
+                )
             except Exception:
-                return render(request, 'web/application_status.html', {'status': 'Произошла ошибка, попробуйте позже'})
+                return render(
+                    request,
+                    'web/application_status.html',
+                    {'success': True, 'status': 'Произошла ошибка, попробуйте позже'}
+                )
         else:
             return self.form_invalid(form)
 

@@ -2,12 +2,10 @@
 {% load static %}
 
 {% block main_content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>{{ status }}</h1>
-                <p>asdasdasdasdasdasd</p>
-            </div>
-        </div>
+<section class="section section-8 post_detail" id="section-8">
+    <div class="container-md py-3">
+        <h3 class="display-7 mb-3 fw-semibold lh-sm text-center text-md-center">{{ status }}</h3>
+        <img class="img-fluid rounded" src="{% if success %}{% static 'images/lexx_logo.png' %}{% else %}{% static 'images/lexx_logo.png' %}{% endif %}" alt="{{ status }}">
     </div>
+</section>
 {% endblock main_content %}
