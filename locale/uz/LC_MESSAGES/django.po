@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-09 13:26+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-09 09:00+0000\n"
+"Last-Translator:   <asd@asd.asd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: lexx_website/settings.py:118
 msgid "RU"
@@ -32,31 +33,31 @@ msgstr ""
 
 #: templates/base.html:27
 msgid "О нас"
-msgstr ""
+msgstr "Biz haqimizda"
 
 #: templates/base.html:30
 msgid "Обучение"
-msgstr ""
+msgstr "Ta'lim"
 
 #: templates/base.html:33
 msgid "Новости"
-msgstr ""
+msgstr "Yangiliklar"
 
 #: templates/base.html:36
 msgid "Карьера"
-msgstr ""
+msgstr "Karyera"
 
 #: templates/base.html:39 templates/web/home.html:271
 msgid "Корпоративная культура"
-msgstr ""
+msgstr "Korporativ madaniyat"
 
 #: templates/base.html:55
 msgid "Все права защищены"
-msgstr ""
+msgstr "Barcha huquqlar himoyalangan"
 
 #: templates/web/home.html:13
 msgid "Добро пожаловать в LEXX International!"
-msgstr ""
+msgstr "LEXX Internationalga xush kelibsiz!"
 
 #: templates/web/home.html:16
 msgid "Оставьте заяку на обучение"
@@ -76,8 +77,7 @@ msgstr ""
 #: templates/web/home.html:42
 msgid ""
 "\n"
-"            Наши <span class=\"custom_span\">ценности</span></span> - это не "
-"просто слова, это фундамент, на котором строится наш успех.\n"
+"            Наши <span class=\"custom_span\">ценности</span></span> - это не просто слова, это фундамент, на котором строится наш успех.\n"
 "            "
 msgstr ""
 
@@ -128,9 +128,7 @@ msgstr ""
 #: templates/web/home.html:78
 msgid ""
 "\n"
-"          Наша <span class=\"custom_span\">команда</span></span> - это "
-"объединение профессионалов, разделяющих эти ценности и горящих желанием "
-"сделать ваш путь к финансовому благополучию успешным и комфортным.\n"
+"          Наша <span class=\"custom_span\">команда</span></span> - это объединение профессионалов, разделяющих эти ценности и горящих желанием сделать ваш путь к финансовому благополучию успешным и комфортным.\n"
 "          "
 msgstr ""
 
@@ -250,7 +248,8 @@ msgid ""
 msgstr ""
 
 #: templates/web/home.html:210
-msgid "Хотите попасть к нам? Тогда заполняйте форму ниже и мы свяжемся с Вами."
+msgid ""
+"Хотите попасть к нам? Тогда заполняйте форму ниже и мы свяжемся с Вами."
 msgstr ""
 
 #: templates/web/home.html:218
@@ -316,60 +315,42 @@ msgstr ""
 #: templates/web/home.html:262
 msgid ""
 "\n"
-"      Хотите попасть к нам? Тогда заполняйте <a href=\"#callback\">форму</a> "
-"выше и мы свяжемся с Вами.</p>\n"
+"      Хотите попасть к нам? Тогда заполняйте <a href=\"#callback\">форму</a> выше и мы свяжемся с Вами.</p>\n"
 "      "
 msgstr ""
 
 #: templates/web/home.html:274
 msgid ""
 "\n"
-"        Принципы работы и этика:</span> Мы стремимся к соблюдению высочайших "
-"этических стандартов, обеспечивая честность и прозрачность во всех аспектах "
-"нашей работы. Мы осознаем нашу ответственность перед нашими трейдерами и "
-"обществом, стремясь к устойчивому и социально ответственному бизнесу. <br>\n"
+"        Принципы работы и этика:</span> Мы стремимся к соблюдению высочайших этических стандартов, обеспечивая честность и прозрачность во всех аспектах нашей работы. Мы осознаем нашу ответственность перед нашими трейдерами и обществом, стремясь к устойчивому и социально ответственному бизнесу. <br>\n"
 "        "
 msgstr ""
 
 #: templates/web/home.html:278
 msgid ""
 "\n"
-"        Инновации и профессиональное развитие:</span> Мы постоянно ищем "
-"новые технологии и методы, чтобы улучшить наши торговые платформы и услуги. "
-"Мы инвестируем в развитие наших сотрудников, предлагая программы обучения, "
-"семинары и возможности карьерного роста. <br>\n"
+"        Инновации и профессиональное развитие:</span> Мы постоянно ищем новые технологии и методы, чтобы улучшить наши торговые платформы и услуги. Мы инвестируем в развитие наших сотрудников, предлагая программы обучения, семинары и возможности карьерного роста. <br>\n"
 "        "
 msgstr ""
 
 #: templates/web/home.html:282
 msgid ""
 "\n"
-"        Командный дух и сотрудничество:</span> Мы верим, что успех "
-"достигается через сотрудничество. Наша культура поддерживает обмен знаниями "
-"и работу в команде для достижения общих целей. Мы поощряем открытую и "
-"честную коммуникацию, где каждый сотрудник может высказать свои идеи и "
-"предложения. <br>\n"
+"        Командный дух и сотрудничество:</span> Мы верим, что успех достигается через сотрудничество. Наша культура поддерживает обмен знаниями и работу в команде для достижения общих целей. Мы поощряем открытую и честную коммуникацию, где каждый сотрудник может высказать свои идеи и предложения. <br>\n"
 "        "
 msgstr ""
 
 #: templates/web/home.html:286
 msgid ""
 "\n"
-"        Баланс работы и личной жизни:</span> Мы поддерживаем здоровый баланс "
-"между работой и личной жизнью, предлагая гибкие графики и программы "
-"поддержки сотрудников. Мы регулярно проводим корпоративные мероприятия и "
-"тимбилдинги, чтобы укрепить командный дух и создать дружелюбную атмосферу."
-"(умеем не только эффективно работать, но и отдыхать, Веллбиинг) <br>\n"
+"        Баланс работы и личной жизни:</span> Мы поддерживаем здоровый баланс между работой и личной жизнью, предлагая гибкие графики и программы поддержки сотрудников. Мы регулярно проводим корпоративные мероприятия и тимбилдинги, чтобы укрепить командный дух и создать дружелюбную атмосферу.(умеем не только эффективно работать, но и отдыхать, Веллбиинг) <br>\n"
 "        "
 msgstr ""
 
 #: templates/web/home.html:290
 msgid ""
 "\n"
-"        Признание и награды:</span> Мы ценим вклад каждого сотрудника и "
-"регулярно отмечаем достижения, предоставляя награды и бонусы. У нас есть "
-"четкие пути карьерного роста, и мы поддерживаем развитие талантов внутри "
-"компании. <br>\n"
+"        Признание и награды:</span> Мы ценим вклад каждого сотрудника и регулярно отмечаем достижения, предоставляя награды и бонусы. У нас есть четкие пути карьерного роста, и мы поддерживаем развитие талантов внутри компании. <br>\n"
 "        "
 msgstr ""
 
@@ -432,8 +413,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:279
@@ -639,15 +620,15 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1550
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1558
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1563
@@ -666,8 +647,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1853
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1857
@@ -826,7 +807,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: venv/lib/python3.10/site-packages/django/forms/boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -876,7 +858,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:633
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -983,7 +966,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1448
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1587
@@ -1443,10 +1427,10 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1498,8 +1482,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:692
@@ -1557,10 +1541,10 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:229
