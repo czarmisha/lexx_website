@@ -1,4 +1,5 @@
 from django.db import models
+from parler.models import TranslatableModel, TranslatedFields
 
 
 class AbstractModel(models.Model):
@@ -16,11 +17,12 @@ class Image(AbstractModel):
         return f"Image {str(self.pk)} - {self.image}"
 
 
-class Post(AbstractModel):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+class Post(TranslatableModel, AbstractModel):
+    translations = TranslatedFields(
+        title=models.CharField(max_length=100),
+        content=models.TextField(),
+    )
     image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True, blank=True)
-    date_posted = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title

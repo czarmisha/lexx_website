@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-09 11:59+0500\n"
+"POT-Creation-Date: 2024-08-09 13:26+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr "Новости"
 msgid "Карьера"
 msgstr "Карьера"
 
-#: templates/base.html:39 templates/web/home.html:277
+#: templates/base.html:39 templates/web/home.html:271
 msgid "Корпоративная культура"
 msgstr ""
 
@@ -64,7 +64,18 @@ msgstr ""
 msgid "Оставьте заяку на обучение"
 msgstr ""
 
-#: templates/web/home.html:43
+#: templates/web/home.html:29
+msgid ""
+"История нашей компании началась в самом сердце Узбекистана — Ташкенте, в "
+"2002 году. Это была амбициозная бизнес-идея, воплощенная четырьмя "
+"единомышленниками. Сегодня компания, штат которой в начале двухтысячных мог "
+"уместиться в один автомобиль, превратилась в преуспевающую международную "
+"корпорацию LEXX International с офисами в Киеве и Ташкенте. Ее сотрудники – "
+"свыше ста профессионалов своего дела – начинают каждый свой день по "
+"американскому времени."
+msgstr ""
+
+#: templates/web/home.html:42
 msgid ""
 "\n"
 "            Наши <span class=\"custom_span\">ценности</span></span> - это не "
@@ -72,30 +83,51 @@ msgid ""
 "            "
 msgstr ""
 
-#: templates/web/home.html:51
+#: templates/web/home.html:50
 msgid "Профессионализм"
 msgstr ""
 
-#: templates/web/home.html:52
+#: templates/web/home.html:51
 msgid ""
 "Профессионализм ДЛЯ НАС - ЭТО НЕ ПРОСТО КАЧЕСТВО РАБОТЫ, НО И СТРЕМЛЕНИЕ К "
 "ПОСТОЯННОМУ САМОСОВЕРШЕНСТВОВАНИЮ. МЫ НЕ ОСТАНАВЛИВАЕМСЯ НА ДОСТИГ НУТОМ И "
 "ВСЕГДА ИЩЕМ ПУТИ СДЕЛАТЬ НАШУ РАБОТУ ЕЩЁ БОЛЕЕ КАЧЕСТВЕННОЙ."
 msgstr ""
 
-#: templates/web/home.html:58
+#: templates/web/home.html:57
 msgid "Ответственность"
 msgstr ""
 
-#: templates/web/home.html:67
+#: templates/web/home.html:58
+msgid ""
+"Ответственность — НАШ ПУТЬ К НАДЕЖНОСТИ! МЫ НЕСЕМ ОТВЕТСТВЕННОСТЬ ЗА КАЖДЫЙ "
+"СОВЕТ И ЗНАНИЕ, КОТОРОЕ ПЕРЕДАЕМ. ВЕДЬ ФИНАНСОВАЯ ГРАМОТНОСТЬ — ЭТО НЕ "
+"ПРОСТО СЛОВА, ЭТО ОБЯЗАТЕЛЬСТВА ПЕРЕД ВАМИ И ВАШИМ БУДУЩИМ!"
+msgstr ""
+
+#: templates/web/home.html:64
 msgid "Эффективность"
 msgstr ""
 
-#: templates/web/home.html:75
+#: templates/web/home.html:65
+msgid ""
+"Эффективность ДЛЯ НАС — ЭТО НЕ ПРОСТО ДОСТИЖЕНИЕ ЦЕЛЕЙ, НО И НАХОЖДЕНИЕ "
+"ОПТИМАЛЬНЫХ ПУТЕЙ ДЛЯ ИХ ДОСТИЖЕНИЯ. МЫ ЦЕНИМ ВАШЕ ВРЕМЯ И РЕСУРСЫ, ПОЭТОМУ "
+"НАШ ПОДХОД ВСЕГДА НАПРАВЛЕН НА МАКСИМИЗАЦИЮ РЕЗУЛЬТАТОВ."
+msgstr ""
+
+#: templates/web/home.html:71
 msgid "Человечность"
 msgstr ""
 
-#: templates/web/home.html:84
+#: templates/web/home.html:72
+msgid ""
+"Человечность - НАШЕ СЕКРЕТНОЕ ОРУЖИЕ! В МИРЕ ЦИФР И ГРАФИКОВ МЫ ПОМНИМ, ЧТО "
+"ЗА КАЖДЫМ УЧЕНИКОМ — ЧЕЛОВЕК. МЫ СОЗДАЕМ СООБЩЕСТВО, ГДЕ МОЖНО ДЕЛИТЬСЯ, "
+"ЗАДАВАТЬ ВОПРОСЫ И РАСТИ ВМЕСТЕ."
+msgstr ""
+
+#: templates/web/home.html:78
 msgid ""
 "\n"
 "          Наша <span class=\"custom_span\">команда</span></span> - это "
@@ -104,186 +136,186 @@ msgid ""
 "          "
 msgstr ""
 
-#: templates/web/home.html:92
+#: templates/web/home.html:86
 msgid "Наша миссия"
 msgstr ""
 
-#: templates/web/home.html:97
+#: templates/web/home.html:91
 msgid ""
 "Мы профессионально торгуем на фондовых рынках и инвестируем, постоянно "
 "развиваясь и предоставляя возможности."
 msgstr ""
 
-#: templates/web/home.html:103
+#: templates/web/home.html:97
 msgid "Мы обеспечиваем благополучие близких и улучшаем качество их жизни."
 msgstr ""
 
-#: templates/web/home.html:109
+#: templates/web/home.html:103
 msgid ""
 "Мы развиваем потенциал наших стран. Даем шанс лучшим реализовать амбиции и "
 "заботимся о тех, кто в этом нуждается."
 msgstr ""
 
-#: templates/web/home.html:118
+#: templates/web/home.html:112
 msgid ""
 "\n"
 "        <span class=\"custom_span\">Последние</span> новости</h2>\n"
 "        "
 msgstr ""
 
-#: templates/web/home.html:128
+#: templates/web/home.html:122
 msgid "Читать"
 msgstr ""
 
-#: templates/web/home.html:140
+#: templates/web/home.html:134
 msgid ""
 "\n"
 "    Преимущества нашего <span class=\"custom_span\">обучения</span></h3>\n"
 "    "
 msgstr ""
 
-#: templates/web/home.html:149
+#: templates/web/home.html:143
 msgid "Множество обученных выпускников"
 msgstr ""
 
-#: templates/web/home.html:150
+#: templates/web/home.html:144
 msgid ""
 "Более 1500 успешных выпускников, многие из которых достигли финансовой "
 "независимости и построили свою карьеру в сфере торговли."
 msgstr ""
 
-#: templates/web/home.html:158
+#: templates/web/home.html:152
 msgid "Уникальная образовательная программа"
 msgstr ""
 
-#: templates/web/home.html:159
+#: templates/web/home.html:153
 msgid ""
 "Собственная образовательная программа, отточенная годами практики и "
 "адаптированная под текущие рыночные условия."
 msgstr ""
 
-#: templates/web/home.html:167
+#: templates/web/home.html:161
 msgid "Преподаватели с многолетним опытом"
 msgstr ""
 
-#: templates/web/home.html:168
+#: templates/web/home.html:162
 msgid ""
 "Наши преподаватели обладают более чем 20-летним успешным опытом в сфере "
 "рынка ценных бумаг, что гарантирует высокое качество обучения."
 msgstr ""
 
-#: templates/web/home.html:176
+#: templates/web/home.html:170
 msgid "Обучение в профессиональном сообществе"
 msgstr ""
 
-#: templates/web/home.html:177
+#: templates/web/home.html:171
 msgid ""
 "Возможность учиться и развиваться в сообществе профессионалов, где можно "
 "перенять бесценный опыт и знания."
 msgstr ""
 
-#: templates/web/home.html:185
+#: templates/web/home.html:179
 msgid "Глубокое понимание фондового рынка"
 msgstr ""
 
-#: templates/web/home.html:186
+#: templates/web/home.html:180
 msgid ""
 "Наши курсы и программы обеспечивают глубокое понимание всех аспектов "
 "фондового рынка, от базовых принципов до сложных стратегий."
 msgstr ""
 
-#: templates/web/home.html:194
+#: templates/web/home.html:188
 msgid "Индивидуальный подход к каждому студенту"
 msgstr ""
 
-#: templates/web/home.html:195
+#: templates/web/home.html:189
 msgid ""
 "Персонализированное обучение и наставничество, позволяющее каждому студенту "
 "достигнуть максимальных результатов."
 msgstr ""
 
-#: templates/web/home.html:203
+#: templates/web/home.html:197
 msgid "Актуальные рыночные данные и аналитика"
 msgstr ""
 
-#: templates/web/home.html:204
+#: templates/web/home.html:198
 msgid ""
 "Доступ к актуальным данным и аналитическим материалам, что помогает "
 "принимать обоснованные и эффективные торговые решения."
 msgstr ""
 
-#: templates/web/home.html:213
+#: templates/web/home.html:207
 msgid ""
 "\n"
 "    Оставить <span class=\"custom_span\">заявку</span></h3>\n"
 "    "
 msgstr ""
 
-#: templates/web/home.html:216
+#: templates/web/home.html:210
 msgid "Хотите попасть к нам? Тогда заполняйте форму ниже и мы свяжемся с Вами."
 msgstr ""
 
-#: templates/web/home.html:224
+#: templates/web/home.html:218
 msgid "Введите ваше ФИО"
 msgstr ""
 
-#: templates/web/home.html:229
+#: templates/web/home.html:223
 msgid "Номер телефона"
 msgstr ""
 
-#: templates/web/home.html:232
+#: templates/web/home.html:226
 msgid "Введите верный номер телефона"
 msgstr ""
 
-#: templates/web/home.html:236
+#: templates/web/home.html:230
 msgid "Отправить"
 msgstr ""
 
-#: templates/web/home.html:244
+#: templates/web/home.html:238
 msgid "Присоединяйтесь к нам!"
 msgstr ""
 
-#: templates/web/home.html:251
+#: templates/web/home.html:245
 msgid "Постоянное сопровождение куратором и ментором:"
 msgstr ""
 
-#: templates/web/home.html:252
+#: templates/web/home.html:246
 msgid ""
 "Обучение с постоянной поддержкой куратора и ментора, что помогает студентам "
 "адаптироваться и успешно применить знания на практике."
 msgstr ""
 
-#: templates/web/home.html:255
+#: templates/web/home.html:249
 msgid "Интерактивные и практические занятия:"
 msgstr ""
 
-#: templates/web/home.html:256
+#: templates/web/home.html:250
 msgid ""
 "Упор на практические занятия и интерактивные методики обучения, что "
 "позволяет сразу применять теоретические знания на практике."
 msgstr ""
 
-#: templates/web/home.html:259
+#: templates/web/home.html:253
 msgid "Современные технологии и инструменты:"
 msgstr ""
 
-#: templates/web/home.html:260
+#: templates/web/home.html:254
 msgid ""
 "Использование новейших технологий и торговых инструментов, что обеспечивает "
 "актуальность и эффективность обучения."
 msgstr ""
 
-#: templates/web/home.html:263
+#: templates/web/home.html:257
 msgid "Семинары и вебинары с ведущими экспертами:"
 msgstr ""
 
-#: templates/web/home.html:264
+#: templates/web/home.html:258
 msgid ""
 "Регулярные семинары и вебинары с участием ведущих экспертов и практиков "
 "рынка ценных бумаг."
 msgstr ""
 
-#: templates/web/home.html:268
+#: templates/web/home.html:262
 msgid ""
 "\n"
 "      Хотите попасть к нам? Тогда заполняйте <a href=\"#callback\">форму</a> "
@@ -291,7 +323,7 @@ msgid ""
 "      "
 msgstr ""
 
-#: templates/web/home.html:280
+#: templates/web/home.html:274
 msgid ""
 "\n"
 "        Принципы работы и этика:</span> Мы стремимся к соблюдению высочайших "
@@ -301,7 +333,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/web/home.html:284
+#: templates/web/home.html:278
 msgid ""
 "\n"
 "        Инновации и профессиональное развитие:</span> Мы постоянно ищем "
@@ -311,7 +343,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/web/home.html:288
+#: templates/web/home.html:282
 msgid ""
 "\n"
 "        Командный дух и сотрудничество:</span> Мы верим, что успех "
@@ -322,7 +354,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/web/home.html:292
+#: templates/web/home.html:286
 msgid ""
 "\n"
 "        Баланс работы и личной жизни:</span> Мы поддерживаем здоровый баланс "
@@ -333,7 +365,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/web/home.html:296
+#: templates/web/home.html:290
 msgid ""
 "\n"
 "        Признание и награды:</span> Мы ценим вклад каждого сотрудника и "
@@ -1555,4 +1587,12 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:248
 msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: web/views.py:44
+msgid "Ваша заявка принята"
+msgstr ""
+
+#: web/views.py:50
+msgid "Произошла ошибка, попробуйте позже"
 msgstr ""

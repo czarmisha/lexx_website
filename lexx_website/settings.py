@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "debug_toolbar",
+    "rosetta",
+    "parler",
     "web",
 ]
 
@@ -42,7 +44,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'django.middleware.locale.LocaleMiddleware',
-    # 'rosetta',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
@@ -119,6 +120,18 @@ LANGUAGES = (
     ('uz', _('UZ')),
     ('en', _('EN')),
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'ru'},
+        {'code': 'uz'},
+        {'code': 'en'},
+    ),
+    'default': {
+        'fallback': 'ru',             # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,   # the default; let .active_translations() return fallbacks too.
+    }
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

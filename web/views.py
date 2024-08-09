@@ -2,6 +2,7 @@ import requests
 
 from django.conf import settings
 from django.shortcuts import render
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import TemplateView, DetailView, View
 
 from web.models import Application, Post
@@ -40,13 +41,13 @@ class ApplicationCreateView(View):
                 return render(
                     request,
                     'web/application_status.html',
-                    {'success': True, 'status': 'Успешно отправлено'}
+                    {'success': True, 'status': _('Ваша заявка принята')}
                 )
             except Exception:
                 return render(
                     request,
                     'web/application_status.html',
-                    {'success': True, 'status': 'Произошла ошибка, попробуйте позже'}
+                    {'success': True, 'status': _('Произошла ошибка, попробуйте позже')}
                 )
         else:
             return self.form_invalid(form)
