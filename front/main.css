@@ -1,0 +1,569 @@
+:root {
+    --strong_black: #000;
+    --basic_white: #fff;
+    --sapphire_blue: #1D4E84;
+    --light_gray: #D5D5D4;
+    --light_blue: #8DACC9;
+    --young_orange: #E2823B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section img.background {
+    width: 100%;
+    object-fit: cover;
+}
+
+section .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+section .logo {
+    max-width: 350px;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    section .logo {
+        max-width: 230px;
+        width: 100%;
+    }
+
+    section img.background {
+        width: 180%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    section .logo {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    section img.background {
+        width: 300%;
+    }
+    
+}
+
+
+/* ########################### Section 1 ########################### */
+.section-1 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-1 .right {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 .application-button {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.section-1 .application-button a {
+    background-color: var(--young_orange);
+    color: var(--basic_white);
+    padding: 10px 70px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0!important;
+    font-weight: 700;
+    border-color: var(--young_orange);
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.section-1 .application-button a:hover {
+    background-color: #c75f0f;
+    border-color: #c75f0f;
+}
+
+.section-1 .language {
+    margin: 5px;
+}
+
+.section-1 .language button {
+    background-color: var(--young_orange);
+    color: var(--basic_white);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0!important;
+    font-weight: 700;
+    border-color: var(--young_orange);
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.section-1 .language button:hover {
+    background-color: #c75f0f;
+    border-color: #c75f0f;
+}
+
+.section-1 .language button:focus {
+    outline: none;
+}
+
+.section-1 .title {
+    text-align: right;
+    color: var(--basic_white);
+    margin-top: 40px;
+    width: 100%;
+}
+
+.section-1 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-1 p {
+    word-spacing: 3px;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .section-1 .title {
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-1 .top {
+        padding: 0 10px;
+    }
+
+    .section-1 .language button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .section-1 h1{
+        font-size: 32px;
+    }
+
+    .section-1 p{
+        font-size: 16px;
+    }
+
+    .section-1 .application-button a {
+        font-size: 16px;
+        padding: 7px 23px;
+    }
+
+    .section-1 .title {
+        margin-top: 60px;
+        margin-bottom: 130px;
+    }
+    
+}
+
+
+/* ########################### Section 2 ########################### */
+.section-2 .wrapper {
+    height: 100%;
+}
+
+.section-2 .logo {
+    margin-bottom: 70px;
+}
+
+.section-2 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-2 .left {
+    height: 100%;
+    width: 50%;
+    background-color: var(--sapphire_blue);
+    color: var(--basic_white);
+}
+
+.section-2 .right {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    color: var(--basic_white);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section-2 .right img.background {
+    width: 220%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.section-2 .left p{
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    max-width: 80%;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+.section-2 .left .content {
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.section-2 .right .content {
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.section-2 .right p {
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    max-width: 80%;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+.section-2 .right .application-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .right .application-button a {
+    background-color: var(--young_orange);
+    color: var(--basic_white);
+    padding: 10px 70px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0!important;
+    font-weight: 700;
+    border-color: var(--young_orange);
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.section-2 .right .application-button a:hover {
+    background-color: #c75f0f;
+    border-color: #c75f0f;
+}
+
+@media screen and (max-width: 992px) {
+    .section-2 .right img.background {
+        width: 250%;
+    }
+
+    .section-2 .logo{
+        margin-bottom: 30px;
+    }
+
+    .section-2 .content {
+        padding: 20px;
+    }
+
+    .section-2 .left p{
+        font-size: 18px;
+        max-width: 90%;
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+
+    .section-2 .right p{
+        font-size: 18px;
+        max-width: 90%;
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+
+    .section-2 .right .application-button a {
+        padding: 10px 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-2 .right img.background {
+        width: 310%;
+    }
+
+    .section-2 .content {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .section-2 .left .content {
+        justify-content: space-between;
+    }
+
+    .section-2 .logo{
+        margin-bottom: 20px;
+    }
+
+    .section-2 .left p{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+
+    .section-2 .right p{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 50px;
+        line-height: 20px;
+    }
+
+    .section-2 .right .application-button a {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-2 {
+        height: 200vh;
+    }
+
+    .section-2 .left {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section-2 .right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section-2 .left .content {
+        padding: 20px;
+    }
+
+    .section-2 .right .content {
+        align-items: start;
+        padding: 20px;
+    }
+
+    .section-2 .left p {
+        line-height: 26px;
+    }
+
+    .section-2 .right .logo {
+        margin-bottom: 50px;
+    }
+
+    .section-2 .right p {
+        line-height: 26px;
+        max-width: 80%;
+    }
+
+    .section-2 .right img.background {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section-2 .right img.background {
+        width: 265%;
+    }
+}
+
+
+/* ########################### Section 3 ########################### */
+
+.section-3 img.background {
+    width: 120%;
+}
+
+.section-3 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-3 .title {
+    margin-top: -80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: var(--basic_white);
+}
+
+.section-3 .title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-3 .title p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.section-3 .subtitle {
+    margin-top: -30px;
+}
+
+.section-3 .content {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.section-3 .content img {
+    width: 100%;
+    height: auto;
+    max-width: 70px;
+    margin-right: 15px;
+}
+
+.section-3 .box {
+    color: var(--basic_white);
+    margin: 20px 0;
+}
+
+.section-3 .box h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-3 .box p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-3 .title {
+        margin-top: -20px;
+    }
+
+    .section-3 .subtitle {
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-3 .container {
+        max-width: 100%;
+    }
+
+    .section-3 img.background {
+        width: 170%;
+    }
+
+    .section-3 .title {
+        margin-top: 0;
+    }
+
+    .section-3 .subtitle {
+        width: 60%;
+    }
+    
+    .section-3 .title h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .section-3 .title p {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section-3 img.background {
+        width: 215%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-3 img.background {
+        width: 250%;
+    }
+
+    .section-3 .title {
+        margin-bottom: 0;
+    }
+
+    .section-3 .subtitle {
+        width: 80%;
+    }
+
+    .section-3 .title h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .section-3 .title p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section-3 img.background {
+        width: 320%;
+    }
+}
+
+
+/* ########################### Section 4 ########################### */
+/* ########################### Section 5 ########################### */
+/* ########################### Section 6 ########################### */
+/* ########################### Section 7 ########################### */
+/* ########################### Section 8 ########################### */
+/* ########################### Section 9 ########################### */
