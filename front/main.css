@@ -12,7 +12,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     font-family: 'Roboto', sans-serif;
@@ -562,8 +561,588 @@ section .logo {
 
 
 /* ########################### Section 4 ########################### */
+.section-4 img.background {
+    width: 120%;
+}
+
+.section-4 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-4 .title {
+    margin-top: -80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: var(--basic_white);
+    margin-bottom: 80px;
+}
+
+.section-4 .title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-4 .content {
+    padding: 30px 0;
+    width: 100%;
+    position: relative;
+}
+
+.section-4 .border-box {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 20%;
+    top: 3%;
+    border-top: 1px solid white;
+    border-radius: 50%;
+    transform: rotate(-13deg);
+}
+
+.section-4 .border-box2 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30%;
+    bottom: 3%;
+    border-bottom: 1px solid white;
+    border-radius: 50%;
+    transform: rotate(-13deg);
+}
+
+.section-4 .text {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    margin: 12px 0;
+    color: var(--basic_white);
+}
+
+.section-4 .text p {
+    max-width: 30%;
+}
+
+.section-4 .text.first {
+    text-align: right;
+    justify-content: end;
+}
+
+.section-4 .text.second {
+    text-align: center;
+    justify-content: center;
+}
+
+.section-4 .text.third {
+    text-align: left;
+    justify-content: start;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-4 .title {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+
+    .section-4 .text {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .section-4 .text p {
+        max-width: 40%;
+    }
+
+    .section-4 .border-box {
+        top: 6%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-4 .container {
+        max-width: 100%;
+    }
+
+    .section-4 img.background {
+        width: 170%;
+    }
+
+    .section-4 .title {
+        margin-top: 0;
+    }
+    
+    .section-4 .title h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .section-4 .border-box {
+        width: 45%;
+        height: 35%;
+    }
+
+    .section-4 .border-box2 {
+        width: 45%;
+        height: 35%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section-4 img.background {
+        width: 215%;
+    }
+
+    .section-4 .text p {
+        max-width: 60%;
+        margin: 10px 0;
+    }
+
+    .section-4 .border-box {
+        width: 45%;
+        height: 16%;
+        left: 5%;
+        top: 8%;
+    }
+
+    .section-4 .border-box2 {
+        width: 45%;
+        height: 16%;
+        left: 45%;
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-4 img.background {
+        width: 250%;
+    }
+
+    .section-4 .title {
+        margin-bottom: 0;
+    }
+
+    .section-4 .title h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .section-4 .text {
+        font-size: 15px;
+    }
+
+    .section-4 .text p {
+        max-width: 70%;
+    }
+
+    .section-4 .border-box {
+        width: 45%;
+        height: 16%;
+        left: 2%;
+        top: 11%;
+        transform: rotate(-45deg);
+        border-radius: 35%;
+    }
+
+    .section-4 .border-box2 {
+        width: 45%;
+        height: 16%;
+        left: 50%;
+        bottom: 15%;
+        transform: rotate(-45deg);
+        border-radius: 35%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section-4 img.background {
+        width: 320%;
+    }
+}
+
+
 /* ########################### Section 5 ########################### */
+
+
+.section-5 {
+    background-color: var(--sapphire_blue);
+    color: var(--basic_white);
+    height: auto;
+    overflow: visible;
+}
+
+.section-5 .container {
+    position: relative !important;
+}
+
+.section-5 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-5 .title {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: var(--basic_white);
+}
+
+.section-5 .title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-5 .content {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.section-5 .content img {
+    width: 100%;
+    height: auto;
+    max-width: 70px;
+    margin-right: 15px;
+}
+
+.section-5 .box {
+    color: var(--basic_white);
+    margin: 20px 0;
+}
+
+.section-5 .box h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-5 .box p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-5 .title {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-5 .container {
+        max-width: 100%;
+    }
+
+    .section-5 .title {
+        margin-top: 0;
+    }
+    
+    .section-5 .title h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .section-5 .title {
+        margin-bottom: 0;
+    }
+
+    .section-5 .title h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+}
+
+
+
 /* ########################### Section 6 ########################### */
+
+.section-6 img.background {
+    width: 120%;
+}
+
+.section-6 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-6 .title {
+    margin-top: -80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: var(--basic_white);
+    margin-bottom: 80px;
+}
+
+.section-6 .title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-6 .content {
+    padding: 30px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-6 .card-box {
+    position: relative;
+    max-height: 250px;
+    height: 100%;
+    overflow: hidden;
+    width: 30%;
+    display: block;
+}
+
+.section-6 .card-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-6 .card-box .card-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+    font-size: 22px;
+    color: var(--basic_white);
+}
+
+@media screen and (max-width: 1400px) {
+    .section-6 .title {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-6 .container {
+        max-width: 100%;
+    }
+
+    .section-6 img.background {
+        width: 170%;
+    }
+
+    .section-6 .title {
+        margin-top: 0;
+    }
+    
+    .section-6 .title h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-6 img.background {
+        display: none;
+    }
+
+    .section-6 {
+        height: auto;
+        background-color: #bd8e67;
+    }
+
+    .section-6 .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-6 .container {
+        position: relative !important;
+    }
+
+    .section-6 .card-box {
+        width: 50%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-6 .title {
+        margin-bottom: 0;
+    }
+
+    .section-6 .title h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .section-6 .card-box {
+        width: 80%;
+    }
+}
+
+
 /* ########################### Section 7 ########################### */
+.section-7 {
+    height: auto;
+}
+
+.section-7 .wrapper {
+    height: 100%;
+}
+
+.section-7 .logo {
+    margin-bottom: 70px;
+}
+
+.section-7 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-7 .left {
+    height: 100%;
+    width: 50%;
+    background-color: var(--sapphire_blue);
+    color: var(--basic_white);
+}
+
+.section-7 .right {
+    width: 50%;
+}
+
+.section-7 .right img.background {
+    width: 100%;
+}
+
+.section-7 .left h4{
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    max-width: 80%;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.section-7 .left p{
+    font-size: 16px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    max-width: 80%;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.section-7 .left .content {
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    z-index: 3;
+}
+
+
+@media screen and (max-width: 992px) {
+    .section-7 .right img.background {
+        width: 250%;
+    }
+
+    .section-7 .logo{
+        margin-bottom: 30px;
+    }
+
+    .section-7 .content {
+        padding: 20px;
+    }
+
+    .section-7 .left p{
+        font-size: 18px;
+        max-width: 90%;
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .section-7 .right img.background {
+        width: 310%;
+    }
+
+    .section-7 .content {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .section-7 .left .content {
+        justify-content: space-between;
+    }
+
+    .section-7 .logo{
+        margin-bottom: 20px;
+    }
+
+    .section-7 .left p{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .section-7 {
+        height: 200vh;
+    }
+
+    .section-7 .left {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section-7 .right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section-7 .left .content {
+        padding: 20px;
+    }
+
+    .section-7 .right img.background {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section-7 .right img.background {
+        width: 265%;
+    }
+}
+
+
+
 /* ########################### Section 8 ########################### */
 /* ########################### Section 9 ########################### */
