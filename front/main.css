@@ -1011,7 +1011,7 @@ section .logo {
     height: 100%;
 }
 
-.section-7 .logo {
+.section-7 h2 {
     margin-bottom: 70px;
 }
 
@@ -1029,17 +1029,25 @@ section .logo {
 
 .section-7 .right {
     width: 50%;
+    overflow: hidden;
 }
 
 .section-7 .right img.background {
-    width: 100%;
+    height: 100%;
+}
+
+.section-7 h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .section-7 .left h4{
     font-size: 18px;
     word-spacing: 3px;
     letter-spacing: 2px;
-    max-width: 80%;
     line-height: 32px;
     font-weight: bold;
 }
@@ -1048,7 +1056,6 @@ section .logo {
     font-size: 16px;
     word-spacing: 3px;
     letter-spacing: 2px;
-    max-width: 80%;
     margin-bottom: 15px;
     line-height: 32px;
 }
@@ -1064,8 +1071,8 @@ section .logo {
 
 
 @media screen and (max-width: 992px) {
-    .section-7 .right img.background {
-        width: 250%;
+    .section-7 .left {
+        width: 100%;
     }
 
     .section-7 .logo{
@@ -1078,7 +1085,6 @@ section .logo {
 
     .section-7 .left p{
         font-size: 18px;
-        max-width: 90%;
         margin-bottom: 30px;
         line-height: 25px;
     }
@@ -1086,10 +1092,6 @@ section .logo {
 }
 
 @media screen and (max-width: 768px) {
-    .section-7 .right img.background {
-        width: 310%;
-    }
-
     .section-7 .content {
         height: 100%;
         padding: 10px;
@@ -1113,36 +1115,200 @@ section .logo {
 }
 
 @media screen and (max-width: 576px) {
-    .section-7 {
-        height: 200vh;
-    }
-
-    .section-7 .left {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .section-7 .right {
-        width: 100%;
-        height: 100vh;
-    }
-
     .section-7 .left .content {
         padding: 20px;
     }
 
-    .section-7 .right img.background {
-        width: 200%;
+    .section-7 h2 {
+        margin-bottom: 40px;
     }
-}
 
-@media screen and (max-width: 425px) {
-    .section-7 .right img.background {
-        width: 265%;
+    .section-7 .left h4{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .section-7 .left p{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 18px;
     }
 }
 
 
 
 /* ########################### Section 8 ########################### */
-/* ########################### Section 9 ########################### */
+.section-8 img.background {
+    width: 100%;
+}
+
+.section-8 .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.section-8 .title {
+    margin-top: -80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: var(--basic_white);
+}
+
+.section-8 .title h2 {
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.section-8 .content {
+    padding: 30px 0;
+    width: 100%;
+    position: relative;
+}
+
+.section-8 .text {
+    font-size: 18px;
+    width: 100%;
+    color: var(--basic_white);
+    text-align: center;
+}
+
+.section-8 .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-8 .form form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--young_orange);
+}
+
+.section-8 .form h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: var(--basic_white);
+    margin-bottom: 40px;
+}
+
+.section-8 .form .input {
+    width: 100%;
+}
+
+.section-8 .form .input input {
+    width: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.section-8 .form input[type="submit"] {
+    color: var(--basic_white);
+    border: 1px solid var(--basic_white);
+    text-transform: uppercase;
+    padding: 7px 20px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-8 .title {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+
+    .section-8 .title h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-8 .form form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-8 .container {
+        max-width: 100%;
+    }
+
+    .section-8 img.background {
+        width: 140%;
+    }
+
+    .section-8 .title {
+        margin-top: 0;
+    }
+    
+    .section-8 .title h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-8 img.background {
+        width: 180%;
+    }
+    .section-8 .form form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-8 img.background {
+        width: 250%;
+    }
+
+    .section-8 .title {
+        margin-bottom: 0;
+    }
+
+    .section-8 .title h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .section-8 .form form {
+        width: 100%;
+    }
+
+    .section-8 .title h2 {
+        font-size: 20px;
+    }
+
+    .section-8 .text {
+        font-size: 16px;
+    }
+
+    .section-8 .form h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .section-8 .form input[type="submit"] {
+        border: 1px solid var(--basic_white);
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section-8 img.background {
+        width: 300%;
+    }
+}
