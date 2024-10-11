@@ -119,7 +119,7 @@ LANGUAGES = (
     ('ru', _('RU')),
     ('uz', _('UZ')),
     ('en', _('EN')),
-    ('ua', _('UA')),
+    ('uk', _('UK')),
 )
 
 PARLER_LANGUAGES = {
@@ -127,7 +127,7 @@ PARLER_LANGUAGES = {
         {'code': 'ru'},
         {'code': 'uz'},
         {'code': 'en'},
-        {'code': 'ua'},
+        {'code': 'uk'},
     ),
     'default': {
         'fallback': 'en',             # defaults to PARLER_DEFAULT_LANGUAGE_CODE
