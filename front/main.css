@@ -17,6 +17,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
 section {
     height: 100vh;
     position: relative;
@@ -888,7 +893,6 @@ section .logo {
     align-items: end;
     width: 100%;
     color: var(--basic_white);
-    margin-bottom: 80px;
 }
 
 .section-6 .title h2 {
@@ -902,7 +906,7 @@ section .logo {
 }
 
 .section-6 .content {
-    padding: 30px 0;
+    padding: 15px 0;
     width: 100%;
     position: relative;
     display: flex;
@@ -1169,7 +1173,6 @@ section .logo {
 
 .section-8 .content {
     padding: 30px 0;
-    width: 100%;
     position: relative;
 }
 
@@ -1311,4 +1314,10 @@ section .logo {
     .section-8 img.background {
         width: 300%;
     }
+}
+
+.section-3 .content, .section-6 .content, .section-8 .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
