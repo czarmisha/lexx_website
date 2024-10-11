@@ -119,6 +119,7 @@ LANGUAGES = (
     ('ru', _('RU')),
     ('uz', _('UZ')),
     ('en', _('EN')),
+    ('ua', _('UA')),
 )
 
 PARLER_LANGUAGES = {
@@ -126,9 +127,10 @@ PARLER_LANGUAGES = {
         {'code': 'ru'},
         {'code': 'uz'},
         {'code': 'en'},
+        {'code': 'ua'},
     ),
     'default': {
-        'fallback': 'ru',             # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'fallback': 'en',             # defaults to PARLER_DEFAULT_LANGUAGE_CODE
         'hide_untranslated': False,   # the default; let .active_translations() return fallbacks too.
     }
 }
