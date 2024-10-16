@@ -368,13 +368,14 @@
                   <p>{% trans 'Мы приглашаем вас стать частью нашей команды и вместе достигать новых высот в мире трейдинга.' %}</p>
               </div>
               <div class="form">
-                  <form action="" method="post">
+                  <form action="{% url 'web:application_form' %}" method="post">
+                    {% csrf_token %}
                       <h3>{% trans "Оставить заявку" %}</h3>
                       <div class="mb-3 input">
-                          <input type="text" class="form-control" id="name" placeholder="{% trans 'Имя' %}">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="{% trans 'Имя' %}">
                       </div>
                       <div class="mb-3 input">
-                          <input type="text" class="form-control" id="phone" placeholder="{% trans 'Телефон' %}">
+                          <input type="text" class="form-control" id="phone" name="phone" placeholder="{% trans 'Телефон' %}">
                       </div>
                       <input type="submit" value="{% trans 'Отправить' %}">
                   </form>

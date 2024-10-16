@@ -1,4 +1,5 @@
 import requests
+import logging
 
 from django.conf import settings
 from django.shortcuts import render
@@ -7,6 +8,9 @@ from django.views.generic import TemplateView, DetailView, View
 
 from web.models import Application, Post
 from .forms import ApplicationForm
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 class HomePageView(TemplateView):
@@ -37,6 +41,7 @@ class ApplicationCreateView(View):
             )
 
             try:
+                logger.info(f"Application created: {application}")
                 self.send_telegram_message(application)
                 return render(
                     request,
@@ -44,18 +49,24 @@ class ApplicationCreateView(View):
                     {'success': True, 'status': _('Ваша заявка принята')}
                 )
             except Exception:
+                logger.error('Error while sending telegram message')
                 return render(
                     request,
                     'web/application_status.html',
                     {'success': True, 'status': _('Произошла ошибка, попробуйте позже')}
                 )
         else:
-            return self.form_invalid(form)
+            logger.error(f'Form is not valid: {form.errors}')
+            return render(
+                    request,
+                    'web/application_status.html',
+                    {'success': True, 'status': _('Форма заполнена неверно. Попробуйте еще раз')}
+                )
 
     def send_telegram_message(self, application):
         telegram_token = settings.TELEGRAM_BOT_TOKEN
         telegram_chat_id = settings.TELEGRAM_CHAT_ID
-        message = f"New Application:\nName: {application.name}\nPhone: {application.phone}"
+        message = f"New Application from Web Site:\n\n- Name: {application.name}\n- Phone: {application.phone}"
         url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
         data = {
             'chat_id': telegram_chat_id,
