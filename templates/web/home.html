@@ -307,18 +307,12 @@
           <h2>{% trans "Последние новости" %}</h2>
       </div>
       <div class="content">
-          <a class="card-box" href="#">
-              <img src="{% static 'images/news1.jpg' %}" alt="">
-              <h5 class="card-title">{% trans 'Новость 1' %}</h5>
-          </a>
-          <a class="card-box" href="#">
-              <img src="{% static 'images/news1.jpg' %}" alt="">
-              <h5 class="card-title">{% trans 'Новость 1' %}</h5>
-          </a>
-          <a class="card-box" href="#">
-              <img src="{% static 'images/news1.jpg' %}" alt="">
-              <h5 class="card-title">{% trans 'Новость 1' %}</h5>
-          </a>
+        {% for post in posts %}
+            <a class="card-box" href="{% url 'web:post' post.pk %}">
+                <img src="{{ post.image.image.url }}" alt="">
+                <h5 class="card-title">{{ post.title }}</h5>
+            </a>
+        {% endfor %}
       </div>
   </div>
 </section>
