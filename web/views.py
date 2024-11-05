@@ -18,7 +18,7 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["posts"] = Post.objects.all()[:3]
+        context["posts"] = Post.objects.all().order_by('-created_at')[:3]
         return context
 
 

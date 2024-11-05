@@ -15,7 +15,7 @@
     outline: 0;
     vertical-align: baseline;
     background: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 body{
@@ -111,6 +111,10 @@ section .logo {
     section img.background {
         width: 300%;
     }
+
+    section {
+        height: auto;
+    }
     
 }
 
@@ -142,8 +146,8 @@ section .logo {
     font-weight: 700;
     border-color: var(--young_orange);
     text-transform: uppercase;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+    /* word-spacing: 4px;
+    letter-spacing: 2px; */
 }
 
 .section-1 .application-button a:hover {
@@ -165,8 +169,8 @@ section .logo {
     font-weight: 700;
     border-color: var(--young_orange);
     text-transform: uppercase;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+    /* word-spacing: 4px;
+    letter-spacing: 2px; */
 }
 
 .section-1 .language button:hover {
@@ -189,13 +193,13 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-1 p {
-    word-spacing: 3px;
-    letter-spacing: 4px;
+    /* word-spacing: 3px;
+    letter-spacing: 4px; */
     font-size: 18px;
 }
 
@@ -279,8 +283,8 @@ section .logo {
 
 .section-2 .left p{
     font-size: 20px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    /* word-spacing: 3px;
+    letter-spacing: 2px; */
     max-width: 80%;
     margin-bottom: 50px;
     line-height: 32px;
@@ -306,8 +310,8 @@ section .logo {
 
 .section-2 .right p {
     font-size: 20px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    /* word-spacing: 3px;
+    letter-spacing: 2px; */
     max-width: 80%;
     margin-bottom: 50px;
     line-height: 32px;
@@ -330,8 +334,8 @@ section .logo {
     font-weight: 700;
     border-color: var(--young_orange);
     text-transform: uppercase;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+    /* word-spacing: 4px;
+    letter-spacing: 2px; */
 }
 
 .section-2 .right .application-button a:hover {
@@ -452,7 +456,7 @@ section .logo {
 
 @media screen and (max-width: 425px) {
     .section-2 .right img.background {
-        width: 265%;
+        width: 300%;
     }
 }
 
@@ -469,7 +473,7 @@ section .logo {
 }
 
 .section-3 .title {
-    margin-top: -80px;
+    margin-top: -40px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -484,8 +488,8 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-3 .title p {
@@ -539,7 +543,7 @@ section .logo {
     }
 
     .section-3 img.background {
-        width: 170%;
+        width: 180%;
     }
 
     .section-3 .title {
@@ -552,7 +556,7 @@ section .logo {
     
     .section-3 .title h2 {
         text-align: left;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .section-3 .title p {
@@ -563,13 +567,13 @@ section .logo {
 
 @media screen and (max-width: 768px) {
     .section-3 img.background {
-        width: 215%;
+        width: 230%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .section-3 img.background {
-        width: 250%;
+        width: 300%;
     }
 
     .section-3 .title {
@@ -588,11 +592,24 @@ section .logo {
     .section-3 .title p {
         font-size: 14px;
     }
+
+    .section-3 .content {
+        padding: 10px 0;
+    }
+
+    .section-3 .box p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .section-3 .box {
+        margin: 10px 0;
+    }
 }
 
 @media screen and (max-width: 470px) {
     .section-3 img.background {
-        width: 320%;
+        width: 340%;
     }
 }
 
@@ -608,7 +625,7 @@ section .logo {
 }
 
 .section-4 .title {
-    margin-top: -80px;
+    margin-top: -40px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -624,8 +641,8 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-4 .content {
@@ -718,7 +735,7 @@ section .logo {
     
     .section-4 .title h2 {
         text-align: left;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .section-4 .border-box {
@@ -797,6 +814,10 @@ section .logo {
         transform: rotate(-45deg);
         border-radius: 35%;
     }
+
+    .section-4 .text p {
+        margin: 3px 0;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -841,8 +862,8 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-5 .content {
@@ -888,7 +909,7 @@ section .logo {
     
     .section-5 .title h2 {
         text-align: left;
-        font-size: 28px;
+        font-size: 26px;
     }
     
 }
@@ -901,6 +922,10 @@ section .logo {
     .section-5 .title h2 {
         text-align: left;
         font-size: 24px;
+    }
+
+    .section-5 .box {
+        margin: 10px 0;
     }
 }
 
@@ -918,7 +943,7 @@ section .logo {
 }
 
 .section-6 .title {
-    margin-top: -80px;
+    margin-top: -40px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -933,8 +958,8 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-6 .content {
@@ -993,7 +1018,7 @@ section .logo {
     
     .section-6 .title h2 {
         text-align: left;
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -1076,22 +1101,22 @@ section .logo {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-7 .left h4{
     font-size: 18px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    /* word-spacing: 3px;
+    letter-spacing: 2px; */
     line-height: 32px;
     font-weight: bold;
 }
 
 .section-7 .left p{
     font-size: 16px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    /* word-spacing: 3px;
+    letter-spacing: 2px; */
     margin-bottom: 15px;
     line-height: 32px;
 }
@@ -1184,7 +1209,7 @@ section .logo {
 }
 
 .section-8 .title {
-    margin-top: -80px;
+    margin-top: -40px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -1199,8 +1224,8 @@ section .logo {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    /* word-spacing: 5px;
+    letter-spacing: 4px; */
 }
 
 .section-8 .content {
@@ -1291,7 +1316,7 @@ section .logo {
     
     .section-8 .title h2 {
         text-align: left;
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -1327,7 +1352,7 @@ section .logo {
     }
 
     .section-8 .text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .section-8 .form h3 {
@@ -1339,6 +1364,14 @@ section .logo {
         border: 1px solid var(--basic_white);
         padding: 5px 20px;
         font-size: 16px;
+    }
+
+    .section-8 .form {
+        margin-top: 10px;
+    }
+
+    .section-8 .content {
+        padding: 10px 0;
     }
 }
 
@@ -1352,4 +1385,24 @@ section .logo {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+/* ########################### Section NEWS DETAIL ########################### */
+.news-detail {
+    min-height: 100vh;
+}
+
+.news-detail .content img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.news-detail .content {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.news-detail p {
+    font-size: 16px;
 }

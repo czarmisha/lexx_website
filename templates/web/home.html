@@ -8,7 +8,7 @@
   <img class="background" src="{% static 'images/backgrounds/alessio-soggetti-IuSemNxGS88-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
           <div class="right">
@@ -47,9 +47,9 @@
   <div class="wrapper d-flex flex-column flex-sm-row">
       <div class="left">
           <div class="content">
-              <div class="logo">
-                  <img src="{% static 'images/lexx_logo.png' %}" alt="">
-              </div>
+                <a href="{% url 'web:home' %}" class="d-block logo">
+                    <img src="{% static 'images/lexx_logo.png' %}" alt="">
+                </a>
               <p>
                   {% trans "LEXX International – это международная компания с офисами в Ташкенте и Киеве." %}
               </p>
@@ -84,7 +84,7 @@
   <img class="background" src="{% static 'images/backgrounds/marek-piwnicki-bCEKJDoh57w-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
@@ -135,7 +135,7 @@
   <img class="background" src="{% static 'images/backgrounds/marek-piwnicki-bCEKJDoh57w-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
@@ -186,7 +186,7 @@
   <img class="background" src="{% static 'images/backgrounds/alain-gehri-ehNRo3eWJAk-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
@@ -217,7 +217,7 @@
 <section class="section-5">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
@@ -227,49 +227,49 @@
       <div class="content">
           <div class="row">
               <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values1.png' %}" alt="">
+                  <img src="{% static 'images/face.png' %}" alt="">
                   <div class="box">
                       <h4 class="">{% trans 'Профессионализм' %}</h4>
                       <p>{% trans "Мы не останавливаемся на достигнутом и всегда ищем пути сделать нашу работу еще более качественной." %}</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                  <img src="{% static 'images/face.png' %}" alt="">
                   <div class="box">
                       <h4 class="">{% trans 'Ответственность' %}</h4>
                       <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                  <img src="{% static 'images/face.png' %}" alt="">
                   <div class="box">
                       <h4 class="">{% trans 'Ответственность' %}</h4>
                       <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                  <img src="{% static 'images/face.png' %}" alt="">
                   <div class="box">
                       <h4 class="">{% trans 'Ответственность' %}</h4>
                       <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 d-flex align-items-center">
-                <img src="{% static 'images/LEXX_values1.png' %}" alt="">
+                <img src="{% static 'images/face.png' %}" alt="">
                 <div class="box">
                     <h4 class="">{% trans 'Ответственность' %}</h4>
                     <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex align-items-center">
-                <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                <img src="{% static 'images/face.png' %}" alt="">
                 <div class="box">
                     <h4 class="">{% trans 'Ответственность' %}</h4>
                     <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex align-items-center">
-                <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                <img src="{% static 'images/face.png' %}" alt="">
                 <div class="box">
                     <h4 class="">{% trans 'Ответственность' %}</h4>
                     <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
@@ -283,7 +283,7 @@
   <img class="background" src="{% static 'images/backgrounds/luca-bravo-i_0do3VRdxs-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
@@ -304,9 +304,9 @@
   <div class="wrapper d-flex">
       <div class="left">
           <div class="content">
-              <div class="logo">
-                  <img src="{% static 'images/lexx_logo.png' %}" alt="">
-              </div>
+              <a href="{% url 'web:home' %}" class="d-block logo">
+              <img src="{% static 'images/lexx_logo.png' %}" alt="">
+          </a>
               <div class="title">
                   <h2>{% trans "Что вы получите?" %}</h2>
               </div>
@@ -332,7 +332,7 @@
   <img class="background" src="{% static 'images/backgrounds/max-kukurudziak-00A8_-MuBeo-unsplash.jpg' %}" alt="">
   <div class="container">
       <div class="top">
-          <a href="#" class="d-block logo">
+          <a href="{% url 'web:home' %}" class="d-block logo">
               <img src="{% static 'images/lexx_logo.png' %}" alt="">
           </a>
       </div>
