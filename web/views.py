@@ -2,7 +2,7 @@ import requests
 import logging
 
 from django.conf import settings
-from django.shortcuts import render
+from django.http import JsonResponse
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import TemplateView, DetailView, View
 
@@ -43,25 +43,22 @@ class ApplicationCreateView(View):
             try:
                 logger.info(f"Application created: {application}")
                 self.send_telegram_message(application)
-                return render(
-                    request,
-                    'web/application_status.html',
-                    {'success': True, 'status': _('Ваша заявка принята')}
-                )
+                return JsonResponse({
+                    'success': True,
+                    'message': _('Ваша заявка принята')
+                })
             except Exception:
                 logger.error('Error while sending telegram message')
-                return render(
-                    request,
-                    'web/application_status.html',
-                    {'success': True, 'status': _('Произошла ошибка, попробуйте позже')}
-                )
+                return JsonResponse({
+                    'success': False,
+                    'message': _('Произошла ошибка, попробуйте позже')
+                })
         else:
             logger.error(f'Form is not valid: {form.errors}')
-            return render(
-                    request,
-                    'web/application_status.html',
-                    {'success': True, 'status': _('Форма заполнена неверно. Попробуйте еще раз')}
-                )
+            return JsonResponse({
+                'success': False,
+                'message': _('Форма заполнена неверно. Попробуйте еще раз')
+            })
 
     def send_telegram_message(self, application):
         telegram_token = settings.TELEGRAM_BOT_TOKEN

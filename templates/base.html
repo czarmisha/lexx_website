@@ -14,6 +14,7 @@
     <title>LEXX International</title>
   </head>
   <body>
+    <div id="notification" class="notification hidden"></div>
     {% block main_content %}
         
     {% endblock main_content %}  
@@ -22,6 +23,8 @@
     <script src="{% static 'scripts/jquery-3.6.0.min.js' %}"></script>
     <script src="{% static 'scripts/popper.min.js' %}"></script>
     <script src="{% static 'scripts/main.js' %}"></script>
+    
+    {% block scripts %}{% endblock scripts %}
 
   </body>
 </html>

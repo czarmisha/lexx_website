@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-id=&pvns0=t4o&w!b2rt902)lx%pd^rpw$6xl=wq)b3oau4(2g"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # https://testdriven.io/blog/multiple-languages-in-django/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 
 TIME_ZONE = "UTC"
 
@@ -116,17 +116,17 @@ LOCALE_PATHS = [
 ]
 
 LANGUAGES = (
+    ('en', _('EN')),
     ('ru', _('RU')),
     ('uz', _('UZ')),
-    ('en', _('EN')),
     ('uk', _('UK')),
 )
 
 PARLER_LANGUAGES = {
     None: (
+        {'code': 'en'},
         {'code': 'ru'},
         {'code': 'uz'},
-        {'code': 'en'},
         {'code': 'uk'},
     ),
     'default': {

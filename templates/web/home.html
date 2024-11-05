@@ -254,43 +254,27 @@
                       <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
                   </div>
               </div>
-          </div>
-      </div>
-  </div>
-</section>
-<section class="section-5">
-  <div class="container">
-      <div class="top">
-          <a href="#" class="d-block logo">
-              <img src="{% static 'images/lexx_logo.png' %}" alt="">
-          </a>
-      </div>
-      <div class="title">
-          <h2>{% trans 'ПРЕИМУЩЕСТВА НАШЕГО ОБУЧЕНИЯ' %}</h2>
-      </div>
-      <div class="content">
-          <div class="row">
               <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values1.png' %}" alt="">
-                  <div class="box">
-                      <h4 class="">{% trans 'Ответственность' %}</h4>
-                      <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values2.png' %}" alt="">
-                  <div class="box">
-                      <h4 class="">{% trans 'Ответственность' %}</h4>
-                      <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 d-flex align-items-center">
-                  <img src="{% static 'images/LEXX_values2.png' %}" alt="">
-                  <div class="box">
-                      <h4 class="">{% trans 'Ответственность' %}</h4>
-                      <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
-                  </div>
-              </div>
+                <img src="{% static 'images/LEXX_values1.png' %}" alt="">
+                <div class="box">
+                    <h4 class="">{% trans 'Ответственность' %}</h4>
+                    <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+                <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                <div class="box">
+                    <h4 class="">{% trans 'Ответственность' %}</h4>
+                    <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+                <img src="{% static 'images/LEXX_values2.png' %}" alt="">
+                <div class="box">
+                    <h4 class="">{% trans 'Ответственность' %}</h4>
+                    <p>{% trans "Это наш путь к надежности! Мы несем ответственность за каждый совет и знания, которые передаем." %}</p>
+                </div>
+            </div>
           </div>
       </div>
   </div>
@@ -362,7 +346,7 @@
                   <p>{% trans 'Мы приглашаем вас стать частью нашей команды и вместе достигать новых высот в мире трейдинга.' %}</p>
               </div>
               <div class="form">
-                  <form action="{% url 'web:application_form' %}" method="post">
+                  <form id="applicationForm">
                     {% csrf_token %}
                       <h3>{% trans "Оставить заявку" %}</h3>
                       <div class="mb-3 input">
@@ -378,5 +362,40 @@
       </div>
   </div>
 </section>
-
 {% endblock main_content %}
+
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $("#applicationForm").on("submit", function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "{% url 'web:application_form' %}",
+                data: $(this).serialize(),
+                success: function (response) {
+                    showNotification(response.message, response.success ? "green" : "red");
+                    if (response.success) {
+                        $("#applicationForm")[0].reset();
+                    }
+                },
+                error: function () {
+                    showNotification("{{ _('Произошла ошибка, попробуйте позже') }}", "red");
+                }
+            });
+        });
+
+        function showNotification(message, color) {
+            let notification = $("#notification");
+            notification.text(message).css("color", color);
+            notification.addClass("show-notification").css("display", "block");
+
+            setTimeout(function () {
+                notification.removeClass("show-notification").fadeOut(300);
+            }, 2000);
+        }
+    });
+</script>
+{% endblock scripts %}
+    

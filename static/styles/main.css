@@ -5,6 +5,7 @@
     --light_gray: #D5D5D4;
     --light_blue: #8DACC9;
     --young_orange: #E2823B;
+    --young_orange_opacity: #e2833bab;
 }
 
 * {
@@ -20,6 +21,37 @@
 body{
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+}
+
+#notification {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #ffffff21;
+    backdrop-filter: blur(10px);
+    z-index: 1000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-notification {
+    animation: slideDown 0.5s ease forwards;
+    display: block;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translate(0, -20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 20px);
+    }
 }
 
 section {
